@@ -1,0 +1,38 @@
+Step 1: For VmWare, in order to support full disk encryption, need to do manually installation. 
+Step 2: Install open-wmare-tool 
+  * Load Cd
+  * Copy gzip to Download & untar
+  * cd ~/Downloads/vmware-tools-distrib       
+  * sudo ./vmware-install.pl
+  * Reboot
+Step 3: Enable FireWall
+  * sudo ufw enable;
+  * sudo ufw default deny; 
+  * sudo ufw allow www; 
+  * sudo ufw status verbose; 
+Step 4: SSH generation 
+  * ssh-keygen -t rsa -b 4096 -C "emailAddress@yahoo.com"
+  * Update github.com public key
+Step 5: Install gvim  
+  * sudo apt-get install vim-gnome
+Step 6: Install git
+  * sudo apt-get install git
+Step 7: Clone several Git Repository from GitHub to setup basic linux environment
+  * git clone git@github.com:<username>/vim.git
+  * ln -s GitHub/vim/.vimrc .
+  * git clone git@github.com:<username>/ubuntu_setup.git
+  * ln -s GitHub/ubuntu_setup/.profile .
+Step 8: Setup scrolling
+  * sudoedit /usr/share/X11/xorg.conf.d/50-synaptics.conf
+    add those lines in the Section "InputClass"
+    Option "VertScrollDelta" "-111"
+    Option "HorizScrollDelta" "-111"
+Step 9: Clean up hostname 
+  * sudoedit /etc/hostname
+    Then give it a new name
+  * sudoedit /etc/hosts
+    Update new name
+Step 10: Create new username --> before saving
+Step 11: : Update Git Info
+  * git config --global user.name "Your name"
+  * git config --global user.email "your email"
