@@ -36,3 +36,10 @@ Step 10: Create new username --> before saving
 Step 11: : Update Git Info
   * git config --global user.name "Your name"
   * git config --global user.email "your email"
+
+Advance Setup --> Specific machine or virtual machine
+Step 12: 
+  * sudo apt-get install -y libav-tools ubuntu-restricted-extras
+  * sudo apt-get install -y libavcodec-extra-54 libavformat-extra-54 
+  * Install video help
+
